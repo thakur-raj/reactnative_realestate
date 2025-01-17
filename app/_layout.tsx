@@ -13,7 +13,7 @@ export default function RootLayout() {
     "Rubik-Medium": require("../assets/fonts/Rubik-Medium.ttf"),
     "Rubik-Regular": require("../assets/fonts/Rubik-Regular.ttf"),
     "Rubik-SemiBold": require("../assets/fonts/Rubik-SemiBold.ttf"),
-  })
+  });
 
   useEffect(() => {
     if(fontsLoaded){
@@ -23,5 +23,5 @@ export default function RootLayout() {
   
   if(!fontsLoaded) return null;
 
-  return <Stack />;
+  return <Stack screenOptions={{headerShown: false}}/>;
 }
